@@ -1,0 +1,42 @@
+//===========================================
+	// -Home Page start
+//===========================================
+
+.headings{
+	margin-top: 75px;
+}
+.headings h1{
+	font-family: 'Tangerine', cursive;
+}
+.headings h2{
+	font-weight: 600;
+	margin:$heading-margin;
+}
+.home-content{
+	width: $container-90;
+	margin: 0 auto;
+	display: none;
+	transition: 4s;
+}
+.headings span{
+	font-family: $font-default;
+	font-size: rem(10);
+	font-weight: normal;
+	color: $primary-color;
+	margin-left: rem(10);
+}
+.paragraphs p{
+	line-height: rem(28);
+	font-size: rem(12);
+	color: $primary-color;
+	margin: rem(19) 0;
+}
+strong{
+	color: $black;
+}
+.home-content,.about-content,.contact-content,.portfolio-content {
+	animation-duration: 1s;
+  }
+//===========================================
+	// -Home Page end
+//===========================================

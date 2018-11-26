@@ -1,0 +1,19 @@
+//===========================================
+    // -Forms Start
+//===========================================
+
+.form-input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 372px;
+    height: rem(40);
+    margin: rem(10) rem(20) rem(10) 0;
+}
+.yellow-input{
+    border-bottom: 1px solid $secondry-color;
+}
+
+//===========================================
+    // -Forms end
+//===========================================

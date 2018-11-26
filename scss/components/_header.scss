@@ -1,0 +1,52 @@
+//===========================================
+	// -Header start
+//===========================================
+.wrapper{
+	height: rem(928); 
+	background-color: white;
+}
+.profile-image{
+	height: 100%;
+	width: 45%;
+	float: left;
+	position: relative;
+}
+.profile-image img{
+	height: 100%;
+	width: 100%;
+}
+.social-div{
+	position: absolute;
+	bottom: 45px;
+	right: 0;
+	transform: translateX(50%);
+	height: rem(306);
+	width: rem(52);
+	background-color: black;
+	border-radius: 2px;
+	.social-icon{
+		color: white;
+		font-size: rem(22);
+		display: block;
+		padding: 14px 15px;
+		transition: 0.6s;
+	}
+	.social-icon:hover{
+		color: $secondry-color;
+	}
+}
+.side-logo{
+	position: absolute;
+	bottom: 156px;
+	left: 0px;
+	transform: translateX(-100%);
+	z-index: 2;
+}
+.content-container{
+	width: 55%;
+	height: 100%;
+	float: left;
+}
+//===========================================
+	// -Header end
+//===========================================

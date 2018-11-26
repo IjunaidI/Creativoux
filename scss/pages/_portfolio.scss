@@ -1,0 +1,37 @@
+//===========================================
+// -portfolio Page start
+//===========================================
+.portfolio-content{
+    width: $container-90;
+    margin: 0 auto;
+    display: none;
+}
+.portfolio-content h3{
+    font-size: rem(11);
+    font-weight: bold;
+    margin: $heading-margin;
+    margin-bottom: rem(28);
+}
+.portfolio-content span{
+    color: $primary-color;
+}
+.grid{
+    display: inline-block;
+}
+.img-large{
+    width: 100%;
+}
+.img-small{
+    width: rem(254);
+}
+.portfolio-content p{
+    color: $primary-color;
+    font-size: rem(12);
+}
+.pages{
+    margin-top: 20px;
+    margin: 0 8px;
+}
+//===========================================
+	// -portfolio Page end
+//===========================================
