@@ -5,40 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <!-- StyleSheets -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- BottsTrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Aniamte CSS Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <title>Document</title>
+    <title>Creativoux</title>
 </head>
 
-<body>
-    <div class="container clearfix">
+<body class="body">
+    <div class="m-container clearfix">
         <div class="side-logo">
-            <img src="images/vertical.png" alt="">
+            <img src="images/vertical.png" alt="logo">
         </div>
-        <header class="main-nav clearfix">
-            <a class="main-logo clearfix">
-                <img src="images/horizontal.png" class="logo" />
-            </a>
-            <ul class="navbar clearfix">
-                <li class="nav-item tab1 active" onclick="changePage('page1','tab1')"><a href="#home">HOME</a></li>
-                <li class="nav-item tab2" onclick="changePage('page2','tab2')"><a href="#news">ABOUT ME</a></li>
-                <li class="nav-item tab3" onclick="changePage('page3','tab3')"><a href="#news">PORTFOLIO</a></li>
-                <li class="nav-item tab4" onclick="changePage('page4','tab4')"><a href="#news">CONTACT</a></li>
-            </ul>
-            <div class="searchbar">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#"><img src="images/horizontal.png" class="logo" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item tab1">
+                <a class=" nav-link " onclick="changePage('page1','tab1')" href="#content">HOME</a>
+                </li>
+                <li class="nav-item tab2">
+                <a class=" nav-link" onclick="changePage('page2','tab2')" href="#content" >ABOUT ME</a>                    
+                  </li>
+                <li class="nav-item tab3">
+                <a class=" nav-link" onclick="changePage('page3','tab3')" href="#content">PORTFOLIO</a>                  
+                </li>
+                <li class="nav-item tab4">
+                <a class=" nav-link" onclick="changePage('page4','tab4')" href="#content">CONTACT</a>                 
+                </li>
+              </ul>
+              <span class="navbar-text searchbar">
                 <i class="icon-search"></i>
-                <input type="text" placeholder="SEARCH">
+              <input type="text" placeholder="SEARCH">
+              </span>
             </div>
-            <div class="hamburger clearfix">
-                <i class="icon-menu"></i>
-            </div>
-        </header>
+          </nav>
         <div class="wrapper clearfix">
             <div class="profile-image">
-                <img src="images/profile-image.png" alt="">
                 <div class="social-div">
                     <i class="social-icon icon-facebook-official"></i>
                     <i class="social-icon icon-twitter"></i>
@@ -48,8 +60,9 @@
                     <i class="social-icon icon-youtube-play"></i>
                 </div>
             </div>
-            <div class="content-container">
-                <div class="home-content display-block page1 bounceIn">
+           
+            <div class="content-container" id="content">
+                <div class="home-content display-block page1 bounceIn" id="home">
                     <div class="headings">
                         <h1>M. Junaid <span>Web Developer</span></h1>
                         <h2>HI,GUYS!</h2>
@@ -85,7 +98,7 @@
                         <p> when an unknown printer took a galley.</p>
                     </div>
                 </div>
-                <div class="about-content page2 jello">
+                <div class="about-content page2 jello" id="about">
                     <h3>ABOUT ME</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
@@ -143,17 +156,23 @@
                         <button class="black-btn">DOWNLOAD PDF</button>
                     </div>
                 </div>
-                <div class="portfolio-content page3 bounce">
+                <div class="portfolio-content page3 bounce" id="portfolio">
                     <h3><span>PORTFOLIO / </span> WEB DESIGN</h3>
-                    <div class="grid img-large"><img src="images/project5.png" alt=""></div>
-                    <div class="grid img-small"><img src="images/project4.png" alt=""></div>
-                    <div class="grid img-small"><img src="images/project3.png" alt=""></div>
-                    <div class="grid img-small"><img src="images/project2.png" alt=""></div>
-                    <div class="grid img-large"><img src="images/project1.png" alt=""></div>
+                    <div class="scroll">
+                        <img src="images/project5.png" class="img-large" alt="">
+                        <img src="images/project4.png" class="img-small" alt="">
+                        <img src="images/project3.png" class="img-small" alt="">
+                        <img src="images/project2.png" class="img-small" alt="">
+                        <img src="images/project2.png" class="img-small" alt="">
+                        <img src="images/project3.png" class="img-small" alt="">
+                        <img src="images/project4.png" class="img-small" alt="">
+                    </div>
                     <p> <span class="pages">1</span> <span class="pages">2</span> <span class="pages">3</span> <span
                             class="pages">4</span> <span class="pages">5</span> <span class="pages">6</span> ...</p>
+                    <div class="overlay">
+                    </div>
                 </div>
-                <div class="contact-content page4 jackInTheBox">
+                <div class="contact-content page4 jackInTheBox" id="contact">
                     <div class="contact-details">
                         <h3>CONTACT</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -205,5 +224,8 @@
     </div>
 </body>
 <script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </html>

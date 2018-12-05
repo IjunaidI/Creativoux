@@ -3,7 +3,7 @@
 //===========================================
 
 .headings{
-	margin-top: 75px;
+	margin-top: rem(75);
 }
 .headings h1{
 	font-family: 'Tangerine', cursive;
@@ -16,7 +16,6 @@
 	width: $container-90;
 	margin: 0 auto;
 	display: none;
-	transition: 4s;
 }
 .headings span{
 	font-family: $font-default;
@@ -25,9 +24,10 @@
 	color: $primary-color;
 	margin-left: rem(10);
 }
+.paragraphs{
+
+}
 .paragraphs p{
-	line-height: rem(28);
-	font-size: rem(12);
 	color: $primary-color;
 	margin: rem(19) 0;
 }
@@ -36,6 +36,17 @@ strong{
 }
 .home-content,.about-content,.contact-content,.portfolio-content {
 	animation-duration: 1s;
+  }
+  @include mq-only("tl", "xxl"){
+	  .headings h2{
+		  margin: 30px 0 ;
+	  }
+  }
+  @include mq("tl",max){
+	  .wrapper{
+		height: 100%;
+	  }
+	 
   }
 //===========================================
 	// -Home Page end

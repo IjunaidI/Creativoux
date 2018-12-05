@@ -5,6 +5,17 @@
     width: $container-90;
     margin: 0 auto;
     display: none;
+    height: 100%;
+   
+}
+.scroll{
+    overflow: scroll;
+    height: 88%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .portfolio-content h3{
     font-size: rem(11);
@@ -18,11 +29,16 @@
 .grid{
     display: inline-block;
 }
+.scroll img{
+    margin: 2px;
+}
 .img-large{
     width: 100%;
 }
 .img-small{
-    width: rem(254);
+    height: 240px;
+    width: 256px;
+    flex: 1;
 }
 .portfolio-content p{
     color: $primary-color;
@@ -32,6 +48,40 @@
     margin-top: 20px;
     margin: 0 8px;
 }
+.overlay{
+    height: 200px;
+    width: 50%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 63%,rgba(255,255,255,1) 69%);
+    bottom: 146px;
+    position: absolute;
+}
+@include mq("xxl", min){
+    .overlay{
+    bottom: 20px;
+    }
+}
+@include mq-only("tl", "xxl"){
+    .portfolio-content{
+        height: 84% ;
+    }
+    .overlay{
+        width: 50%;
+        bottom: 146px;
+    }
+}
+@include mq("tl",max){
+    .overlay{
+        width: 90%;
+        bottom: 30px;
+    }
+}
+@include mq-only("xs", "md"){
+    .overlay{
+        bottom: 20px;
+        width: 90%;
+    }
+}
+
 //===========================================
 	// -portfolio Page end
 //===========================================

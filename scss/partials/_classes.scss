@@ -10,7 +10,21 @@
 	clear: both;
 	display: table;
   }
-
+	.display-block{
+		display: block!important;
+	}
+	.active{
+		border-bottom: rem(2) solid $white;
+	}
+	.overlay-dark{
+		background-color: rgba(0, 0, 0, 0.288)!important;
+		height: 100vh;
+	}
+	@include mq-only("xs", "md"){
+		.active{
+		border-top: rem(2) solid $white; 
+	}
+	}
 //===========================================
 	// -Helper Classes end
 //===========================================

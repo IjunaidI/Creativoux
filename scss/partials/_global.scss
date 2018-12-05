@@ -4,9 +4,14 @@
 
 
 // Default style start
+*{
+  scroll-behavior: smooth;
+}
+*{
+  outline: none;
+}
 body{
   background: url(../images/background.png) no-repeat center center fixed; 
-  background-size: cover;
 }
 * {
   box-sizing: border-box;
@@ -28,16 +33,34 @@ html, body {
     font-size: 16px;
   }
 }
-.container{
-  width: 1675px;
+.m-container{
+  width: rem(1675);
   margin: 0 auto;
   position: relative;
 }
-.display-block{
-  display: block!important;
+@include mq-only("xl", "xxl"){
+.m-container{
+  width: rem(1200);
 }
-.active{
-  border-bottom: 2px solid $white;
+}
+@include mq-only("xs", "xl"){
+  .m-container{
+    width: 100%;
+  }
+  }
+@include mq-only("lg","xl"){
+  p{
+  font-size: rem(12);
+  }
+}
+@include mq-only("xs","lg"){
+  p{
+  font-size: 16px;
+  line-height: rem(36)!important;
+  }
+  body.body h3{
+    font-size: rem(28);
+  }
 }
 //=======================================================
 	// -Global style  end

@@ -2,14 +2,17 @@
 	// -Header start
 //===========================================
 .wrapper{
-	height: rem(928); 
+	height: rem(960); 
 	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
 }
 .profile-image{
 	height: 100%;
 	width: 45%;
-	float: left;
 	position: relative;
+	background-position: center;
+	background-size: cover;
 }
 .profile-image img{
 	height: 100%;
@@ -17,18 +20,18 @@
 }
 .social-div{
 	position: absolute;
-	bottom: 45px;
+	bottom: rem(45);
 	right: 0;
 	transform: translateX(50%);
 	height: rem(306);
 	width: rem(52);
 	background-color: black;
-	border-radius: 2px;
+	border-radius: rem(2);
 	.social-icon{
 		color: white;
 		font-size: rem(22);
 		display: block;
-		padding: 14px 15px;
+		padding: rem(14) rem(15);
 		transition: 0.6s;
 	}
 	.social-icon:hover{
@@ -37,15 +40,33 @@
 }
 .side-logo{
 	position: absolute;
-	bottom: 156px;
-	left: 0px;
+	bottom: rem(156);
+	left: 0;
 	transform: translateX(-100%);
 	z-index: 2;
 }
 .content-container{
-	width: 55%;
+	flex: 1;
 	height: 100%;
-	float: left;
+}
+.hamburger{
+		display: none;
+}
+@include mq("tl",max){
+	.profile-image{
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 100vh;
+	}
+	.social-div{
+		display: none;
+	}
+	.content-container{
+		width: 100%;
+		background-color: white;
+	}
 }
 //===========================================
 	// -Header end

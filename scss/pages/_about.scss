@@ -13,9 +13,22 @@
 	font-weight: 600;
 }
 .about-content p {
-    font-size: rem(12);
     color: $primary-color;
     line-height: rem(28)
+}
+.skill-set{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    h3{
+        width: 100%;
+    }
+    p {
+    display: inline-block;
+    color: black;
+    font-weight: bolder;
+    margin-left: 10px;
+}
 }
 .skills h3{
     margin-bottom: rem(40);
@@ -27,16 +40,9 @@
     display: inline-block;
     margin-bottom: rem(30);
 }
-.skills p {
-    display: inline-block;
-    margin-top: -2px;
-    float: right;
-    color: black;
-    font-weight: bolder;
-}
 .percentage-line{
     width: 90%;
-    display: inline-block;
+    flex: 1;
 }
 
 .skillno1 hr{
@@ -75,7 +81,11 @@
 .cv-download button{
     margin-top: rem(14);
 }
-
+@include mq-only("tl", "xxl"){
+    .about-content h3{
+        margin: 40px 0;
+    }
+}
 //===========================================
 	// -About Page end
 //===========================================

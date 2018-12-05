@@ -13,6 +13,7 @@ $secondry-color: rgb(247, 191, 22);
 $font-default:	'Montserrat', sans-serif;
 $font-primery:	'ostrichsansinlineregular', sans-serif;
 $heading-margin: 60px 0;
+$container-90:90%;
 
 // Break Pointss
 $grid-breakpoints: (
@@ -20,10 +21,12 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  tl: 1024px,
+  xl: 1200px,
+  xxl:1670px,
+  custom:1040px,
 ) !default;
 
-$container-90:90%;
 
 //===========================================
 	// -Variables end
